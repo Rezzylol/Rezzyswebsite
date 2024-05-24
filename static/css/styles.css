@@ -1,0 +1,81 @@
+/* Import Tailwind CSS */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom dark theme styles */
+body {
+    background-color: #1a202c; /* Dark background */
+    color: #cbd5e0; /* Light text */
+}
+
+.bg-blue-500 {
+    background-color: #6b46c1; /* Deep purple */
+}
+
+.bg-blue-700 {
+    background-color: #2c5282; /* Even darker blue */
+}
+
+.bg-orange-500 {
+    background-color: #dd6b20; /* Darker orange */
+}
+
+.bg-orange-700 {
+    background-color: #c05621; /* Even darker orange */
+}
+
+.bg-pink-500 {
+    background-color: #d53f8c; /* Darker pink */
+}
+
+.bg-pink-700 {
+    background-color: #b83280; /* Even darker pink */
+}
+
+.bg-gray-800 {
+    background-color: #2d3748; /* Darker gray */
+}
+
+.bg-gray-900 {
+    background-color: #1a202c; /* Even darker gray */
+}
+
+.bg-purple-500 {
+    background-color: #805ad5; /* Darker purple */
+}
+
+.bg-purple-700 {
+    background-color: #6b46c1; /* Even darker purple */
+}
+
+.bg-black {
+    background-color: #000000; /* Black */
+}
+
+.hover\:bg-gray-800:hover {
+    background-color: #2d3748; /* Darker gray on hover */
+}
+
+.hover\:bg-blue-700:hover {
+    background-color: #2c5282; /* Even darker blue on hover */
+}
+
+.hover\:bg-orange-700:hover {
+    background-color: #c05621; /* Even darker orange on hover */
+}
+
+.hover\:bg-pink-700:hover {
+    background-color: #b83280; /* Even darker pink on hover */
+}
+
+.hover\:bg-gray-900:hover {
+    background-color: #1a202c; /* Even darker gray on hover */
+}
+
+.hover\:bg-purple-700:hover {
+    background-color: #6b46c1; /* Even darker purple on hover */
+}
