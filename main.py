@@ -19,20 +19,14 @@ def home_route():
 @app.route("/ip")
 def show_ip():
     return f"Your IP address is: {request.user_ip}"  # This route is no longer used
-# class StandaloneApplication(BaseApplication):
-#     def __init__(self, app, options=None):
-#         self.application = app
-#         self.options = options or {}
-#         super().__init__()
-# 
-#     def load_config(self):
-#         # Apply configuration to Gunicorn
-#         for key, value in self.options.items():
-#             if key in self.cfg.settings and value is not None:
-#                 self.cfg.set(key.lower(), value)
-# 
-#     def load(self):
-#         return self.application
+
+@app.route("/about")
+def about_route():
+    return render_template("about.html", user_ip=request.user_ip)
+
+@app.route("/silly")
+def silly_route():
+    return render_template("silly.html", user_ip=request.user_ip)
 
 import random
 
