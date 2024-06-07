@@ -87,3 +87,43 @@ body {
 .hover\:bg-purple-700:hover {
     background-color: #6b46c1; /* Even darker purple on hover */
 }
+
+/* those are all prolly useless now but im too scared to delete them */
+
+.bg-space {
+    background-color: #1B1B3A;
+}
+.bg-finn {
+    background-color: #693668;
+}
+
+.bg-haze {
+    background-color: #a74482;
+}
+
+.bg-rose {
+    background-color: #F84AA7;
+}
+
+.bg-folly {
+    background-color: #FF3562;
+}
+
+.hover\:bg-space:hover {
+    background-color: #1B1B3A;
+}
+.hover\:bg-finn:hover {
+    background-color: #693668;
+}
+
+.hover\:bg-haze:hover{
+    background-color: #a74482;
+}
+
+.hover\:bg-rose:hover {
+    background-color: #F84AA7;
+}
+
+.hover\:bg-folly:hover {
+    background-color: #FF3562;
+}
