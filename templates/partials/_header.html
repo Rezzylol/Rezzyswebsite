@@ -6,14 +6,21 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
     <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
-    <title>Document</title>
-</head>
+    <title>Rezzy's cave</title>
+    <style>
+        pre.ascii-art {
+            font-family: monospace;
+            white-space: pre;
+            color: #6b46c1; /* Deep purple */
+            text-align: center;
+        }
+    </style>
 <body>
 <nav class="bg-gradient-to-r from-gray-900 to-gray-800 p-4 shadow-lg text-white">
     <div class="container mx-auto flex flex-wrap items-center justify-between">
-        <a href="#" class="flex items-center">
+        <a href="https://media1.tenor.com/m/5BYK-WS0__gAAAAd/cool-fun.gif" target="_blank" class="flex items-center">
             <img src="https://pbs.twimg.com/profile_images/1528646071479459840/rQ2JwauK_400x400.jpg" alt="Brand Logo" class="mr-3 h-6 sm:h-9 rounded-full">
-            <span class="self-center text-xl font-semibold whitespace-nowrap">BrandName</span>
+            <span class="self-center text-xl font-semibold whitespace-nowrap">Rezzyyyyyy</span>
         </a>
         <button data-collapse-toggle="mobile-menu" class="inline-flex items-center p-2 ml-3 text-sm text-white rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="mobile-menu" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
@@ -24,14 +31,9 @@
         <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
             <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                 <li>
-                    <a href="#" class="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent md:p-0" aria-current="page">Home</a>
+                    <a href="https://www.youtube.com/watch?v=vcAp4nmTZCA" class="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent md:p-0" aria-current="page">Bladee button</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-<script src="{{ url_for('static', filename='js/script.js') }}"></script>
-</body>
-</html>

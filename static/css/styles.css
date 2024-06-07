@@ -1,5 +1,13 @@
 /* Import Tailwind CSS */
 @import "tailwindcss/base";
+
+/* Custom ASCII Art Header */
+pre.ascii-art {
+    font-family: monospace;
+    white-space: pre;
+    color: #6b46c1; /* Deep purple */
+    text-align: center;
+}
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 @tailwind base;
@@ -8,8 +16,8 @@
 
 /* Custom dark theme styles */
 body {
-    background-color: #1a202c; /* Dark background */
-    color: #cbd5e0; /* Light text */
+    background-color: #ffb6c1 !important; /* Lighter pink background */
+    color: #000000; /* Black text */
 }
 
 .bg-blue-500 {
