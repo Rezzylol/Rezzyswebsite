@@ -3,7 +3,7 @@ networks:
     external: true
     name: traefik
 services:
-  smokeping:
+  rezzyweb:
     build:
       context: .
     container_name: rezzyweb
