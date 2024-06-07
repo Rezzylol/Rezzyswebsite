@@ -7,7 +7,7 @@ ENV PYTHONDONTWRITEBYTECODE=1
 
 ENV PYTHONUNBUFFERED=1
 
-WORKDIR /app
+WORKDIR /main
 
 ARG UID=10001
 RUN adduser \
@@ -27,4 +27,4 @@ USER appuser
 
 COPY . .
 
-CMD python3 app.py
+CMD python3 main.py
