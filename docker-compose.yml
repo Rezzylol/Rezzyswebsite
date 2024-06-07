@@ -1,11 +1,23 @@
+networks:
+  traefik:
+    external: true
+    name: traefik
 services:
-  gmbot:
+  smokeping:
     build:
       context: .
-    container_name: Rezzysite
+    container_name: rezzyweb
     env_file:
       - stack.env
     pull_policy: build
+    hostname: rezzy.fr
+    labels:
+      - traefik.docker.network=traefik
+      - traefik.enable=true
+      - traefik.http.routers.rezzyweb.entrypoints=websecure
+      - traefik.http.routers.rezzyweb.rule=Host(`rezzy.fr`)
+      - traefik.http.routers.rezzyweb.tls.certresolver=letsencrypt
+      - traefik.http.services.rezzyweb.loadbalancer.server.port=80
+    networks:
+      traefik: null
     restart: unless-stopped
-    volumes:
-      - /opt/docker/Rezzysite:/data
