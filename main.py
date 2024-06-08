@@ -11,7 +11,7 @@ app = Flask(__name__, static_folder='static')
 
 @app.before_request
 def before_request():
-    request.user_ip = request.remote_addr
+    request.user_ip = request.headers.get('cf-connecting-ip')
 
 @app.route("/")
 def home_route():
