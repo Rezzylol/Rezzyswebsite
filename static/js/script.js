@@ -10,15 +10,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-    // Check if the user is on mobile
-    if (/Mobi|Android/i.test(navigator.userAgent)) {
+// Check if the user is on mobile
+
+if (/Mobi|Android/i.test(navigator.userAgent)) {
         const overlay = document.createElement('div');
         overlay.style.position = 'fixed';
         overlay.style.top = '0';
         overlay.style.left = '0';
         overlay.style.width = '100%';
         overlay.style.height = '100%';
-        overlay.style.backgroundColor = 'rgba(255, 192, 203, 0.8)';
+        overlay.style.backgroundColor = 'rgba(255, 0, 0, 0.8)';
         overlay.style.color = 'pink';
         overlay.style.display = 'flex';
         overlay.style.flexDirection = 'column';
@@ -34,4 +35,3 @@ document.addEventListener('DOMContentLoaded', () => {
             overlay.style.display = 'none';
         });
     }
-});
