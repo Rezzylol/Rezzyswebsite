@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+<div></div>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
-    <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet">
-    <title>Yip Box</title>
+    <link rel="icon" type="image/jpeg" href="static/favicon.ico">
 </head>
-<body class="bg-black font-sans leading-normal tracking-normal">
-    {% include 'partials/_header.html' %}
-    <div class="container mx-auto px-4 mt-8 min-h-screen">
-        <h1 class="text-4xl font-bold mb-4 text-white">Yip Box</h1>
-        <div id="yip-box" class="bg-gray-800 p-4 rounded-lg">
-            <ul id="messages" class="text-white">
-                {% for message in messages %}
-                    <li>{{ message.key }}: {{ message.value }}</li>
-                {% endfor %}
-            </ul>
-            <input id="username-input" name="username" class="w-full p-2 mt-2 rounded-lg" type="text" placeholder="Enter your username...">
-            <input id="message-input" name="message" class="w-full p-2 mt-2 rounded-lg" type="text" placeholder="Get yipping...">
-            <button id="send-button" class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded mt-2">Yip!</button>
-        </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-    <script src="{{ url_for('static', filename='js/yip_box.js') }}"></script>
+
+
+<p>sorry chat it turns out making a chat box is actually incredibly fucking hard, sorry folks ill keep cooking, check back in a week</p>
+
+<img src="https://i.imgflip.com/4u8tgt.jpg?a477120" alt="oldmate">
+
+<div class="fixed bottom-0 right-0 p-4 text-black">
+    I have your IP!!! :3c {{ user_ip }} <br>
+    You are the {{ visitor_number }}th visitor!
+    Hosted by kay!
+</div>
+</div>
+<audio id="bgMusic" autoplay loop>
+<source src="https://rezzy.fr/static/music/bn2meloop.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>  
+<footer class="fixed bottom-0 left-0 right-0 flex justify-center space-x-2">
+<img class="banner" src="https://cyber.dabamos.de/88x31/csbanner.gif" alt="csbanner" height="31" width="88">
+<a href="https://roadpirrate.neocities.org/" target="_blank">
+    <img class="banner" src="https://hellnet.work/8831/img/buttons/MotorCity_6352_box2.gif" alt="csbanner" height="31" width="88">
+</a>
+<a href="https://kei.flex.lol/" target="_blank">
+    <img class="banner" src="https://cyber.dabamos.de/88x31/cyberdog.gif" alt="cyberdog" height="31" width="88">
+</a>
+<img class="banner" src="https://cyber.dabamos.de/88x31/cinni_angelbutton3.gif" alt="cinni_angelbutton3" height="31" width="88">
+<img class="banner" src="https://cyber.dabamos.de/88x31/reshirii.gif" alt="reshirii" height="31" width="88">
+<img class="banner" src="https://cyber.dabamos.de/88x31/tigers.gif" alt="tigers" height="31" width="88">
+<img class="banner" src="https://cyber.dabamos.de/88x31/y2kid.gif" alt="y2kid" height="31" width="88">
+</footer>
 </body>
-</html>
