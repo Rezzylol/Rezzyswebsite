@@ -28,17 +28,9 @@ def about_route():
 def silly_route():
     return render_template("silly.html", user_ip=request.user_ip)
 
-@app.route("/yip_box", methods=["GET", "POST"])
-def yip_box_route():
-    if request.method == "POST":
-        username = request.form.get("username")
-        message = request.form.get("message")
-        if username and message:
-            key_value_storage("store", "yip_box", username, message)
-    messages = key_value_storage("retrieve", "yip_box", "", "")
-    if messages.get("upstream_service_result_code") != 200:
-        messages = {"kv_pairs": []}
-    return render_template("yip_box.html", user_ip=request.user_ip, messages=messages.get("kv_pairs", []))
+@app.route("/yip_box")
+def silly_route():
+    return render_template("yip_box.html", user_ip=request.user_ip)
 
 
 import random
