@@ -14,7 +14,6 @@ pre.ascii-art {
 @tailwind components;
 @tailwind utilities;
 
-
 /* Custom dark theme styles */
 body {
     background-color: #ffb6c1 !important; /* Lighter pink background */
