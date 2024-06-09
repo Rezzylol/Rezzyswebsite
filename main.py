@@ -29,7 +29,7 @@ def silly_route():
     return render_template("silly.html", user_ip=request.user_ip)
 
 @app.route("/yip_box")
-def yip_route():
+def silly_route():
     return render_template("yip_box.html", user_ip=request.user_ip)
 
 
