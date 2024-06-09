@@ -1,15 +1,14 @@
 {
-    "name": "yip-box",
-    "version": "1.0.0",
-    "description": "A global shout box (Yip Box) for a website.",
-    "main": "server.js",
-    "scripts": {
-      "start": "node yip_box/server.js"
-    },
-    "dependencies": {
-      "body-parser": "^1.19.0",
-      "express": "^4.17.1",
-      "sqlite3": "^5.0.0"
-    }
+  "name": "yip-box",
+  "version": "1.0.0",
+  "description": "A global shout box (Yip Box) for a website.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node yip_box/server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "sqlite3": "^5.0.0"
   }
-  
+}
