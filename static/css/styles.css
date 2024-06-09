@@ -10,10 +10,10 @@ pre.ascii-art {
 }
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 /* Custom dark theme styles */
 body {
