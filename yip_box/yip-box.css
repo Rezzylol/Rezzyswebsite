@@ -1,40 +1,41 @@
 #yip-box {
-  border: 1px solid #ccc;
-  padding: 10px;
-  width: 300px;
-  margin: 20px auto;
-  background-color: #f9f9f9;
-}
-
-#yip-box h3 {
-  margin-top: 0;
-}
-
-#yip-messages {
-  height: 200px;
-  overflow-y: auto;
-  border: 1px solid #ddd;
-  padding: 5px;
-  margin-bottom: 10px;
-  background-color: #fff;
-}
-
-#yip-messages .yip-message {
-  margin-bottom: 5px;
-  padding: 5px;
-  border-bottom: 1px solid #eee;
-}
-
-#yip-form {
-  display: flex;
-  flex-direction: column;
-}
-
-#yip-form input {
-  margin-bottom: 5px;
-  padding: 5px;
-}
-
-#yip-form button {
-  padding: 5px 10px;
-}
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+  }
+  
+  #yip-box h3 {
+    margin-top: 0;
+  }
+  
+  #yip-messages {
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
+  
+  #yip-messages .yip-message {
+    margin-bottom: 5px;
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  #yip-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #yip-form input {
+    margin-bottom: 5px;
+    padding: 5px;
+  }
+  
+  #yip-form button {
+    padding: 5px 10px;
+  }
+  
