@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,18 +12,18 @@
     {% include 'partials/_header.html' %}
     <div class="container mx-auto px-4 mt-8 min-h-screen">
         <h1 class="text-4xl font-bold mb-4 text-white">Yip Box</h1>
-        <div id="shout-box" class="bg-gray-800 p-4 rounded-lg">
+        <div id="yip-box" class="bg-gray-800 p-4 rounded-lg">
             <ul id="messages" class="text-white">
                 {% for message in messages %}
                     <li>{{ message.key }}: {{ message.value }}</li>
                 {% endfor %}
             </ul>
             <input id="username-input" name="username" class="w-full p-2 mt-2 rounded-lg" type="text" placeholder="Enter your username...">
-            <input id="message-input" name="message" class="w-full p-2 mt-2 rounded-lg" type="text" placeholder="get yappin...">
-            <button id="send-button" class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded mt-2">Yip</button>
+            <input id="message-input" name="message" class="w-full p-2 mt-2 rounded-lg" type="text" placeholder="Get yipping...">
+            <button id="send-button" class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded mt-2">Yip!</button>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-    <script src="{{ url_for('static', filename='js/shout_box.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/yip_box.js') }}"></script>
 </body>
 </html>
