@@ -5,13 +5,39 @@
     <link rel="icon" type="image/jpeg" href="static/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        #mobileMessage {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: pink;
+            color: black;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            box-sizing: border-box;
+        }
+        #mobileMessage button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body class="bg-gray-100 font-sans leading-normal tracking-normal">
     <div id="mobileMessage">
         <h1>Back in my day we didn't have phones!</h1>
         <p>This website is best experienced in 4k widescreen with a little bit of Bladee playing.</p>
         <button onclick="hideMessage()">Continue Anyway</button>
-        <script src="/static/js/mobilecheck.js"></script>
+        <script src="/static/js/mobilecheck.js "></script>
     </div>
     {% include 'partials/_header.html' %}
     <div class="container mx-auto px-4 mt-8 min-h-screen">
