@@ -12,18 +12,15 @@
     <style>
         #links {
     opacity: 0;
-    transform: translateY(0px);
     animation: fadeIn 1.5s ease-out forwards;
 }
 
 @keyframes fadeIn {
     0% {
         opacity: 0;
-        transform: translateY(0px);
     }
     100% {
         opacity: 1;
-        transform: translateY(0);
     }
 }
     .blink {
@@ -65,7 +62,7 @@
 
     </style>
 </head>
-<body id="links" class="bg-gray-100 font-sans leading-normal tracking-normal">
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
     <div id="mobileMessage">
         <h1>Back in my day we didn't have phones!</h1>
         <p>This website is best experienced in 4k widescreen with a little bit of Bladee playing.</p>
@@ -103,7 +100,7 @@
             }, 5000);
         </script>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div id="links" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <a href="https://twitter.com/Rezzybxy" target="_blank" class="bg-space hover:bg-finn text-white font-bold py-2 px-4 rounded inline-flex items-center">
                 <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" class="w-6 h-6 mr-2">
                 Twitter
