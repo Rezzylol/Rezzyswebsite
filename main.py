@@ -16,6 +16,7 @@ def before_request():
 @app.route("/")
 def home_route():
     return render_template("home.html", user_ip=request.user_ip)
+
 @app.route("/ip")
 def show_ip():
     return f"Your IP address is: {request.user_ip}"  # This route is no longer used
