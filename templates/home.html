@@ -6,6 +6,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        
+        .blink {
+            animation: blinker 1.5s linear infinite;
+            color: black;
+            font-family: sans-serif;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+        
         body, html {
             height: 100%;
             margin: 0;
@@ -40,6 +53,11 @@
         <script src="/static/js/mobilecheck.js "></script>
     </div>
     {% include 'partials/_header.html' %}
+    <div>  
+        <marquee class="blink" behavior="scroll" direction="right" scrollamount="12">
+            Rezzy World take over Rezzy World take over Rezzy World take over Rezzy World take over Rezzy World take over Rezzy World take over Rezzy World take over Rezzy World take over Rezzy World take over Rezzy World take over Rezzy World take over
+    </marquee>
+    </div>
     <div class="container mx-auto px-4 mt-8 min-h-screen">
         <pre class="ascii-art">
  " _  .-')     ('-.     .-') _    .-') _                                           
