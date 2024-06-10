@@ -19,6 +19,9 @@
             display: block;
             opacity: 1;
         }
+        #hiddenImage.hide {
+            opacity: 0;
+        }
 #links {
     opacity: 0;
     animation: fadeIn 1.5s ease-out forwards;
@@ -262,17 +265,23 @@
     </div>
 </div>
 
-<div class="fixed bottom-12 right-0">
-    <img id="hiddenImage" scr="https://media.discordapp.net/attachments/1041206511088713871/1249689346827878451/tgmeme.png?ex=66683766&is=6666e5e6&hm=e9fe54b06fadbc51a5326b79a33784bac3caccc456a7ce55b9c81f17752fd5f2&=&format=webp&quality=lossless&width=279&height=65" alt="tgmeme">
+<div class="fixed bottom-0 right-0 p-4 text-black">
+    <img id="hiddenImage" class="center" src="https://cdn.discordapp.com/attachments/1041206511088713871/1249689346827878451/tgmeme.png?ex=66683766&is=6666e5e6&hm=e9fe54b06fadbc51a5326b79a33784bac3caccc456a7ce55b9c81f17752fd5f2&">
     <script>
         setTimeout(function() {
             const image = document.getElementById('hiddenImage');
             image.style.display = 'block';
             setTimeout(function() {
                 image.classList.add('show');
+                setTimeout(function() {
+                    image.classList.add('hide');
+                    setTimeout(function() {
+                        image.style.display = 'none';
+                    }, 500); // Wait for the fade-out transition to complete before setting display to none
+                }, 5000); // 5000 milliseconds = 5 seconds
             }, 10); // Small delay to ensure the display property has been applied before starting the fade effect
-        }, 25000); // 25000 milliseconds = 25 seconds
-    </script>
+        }, 25000); 
+        </script>
 </body>
 </div>
 
