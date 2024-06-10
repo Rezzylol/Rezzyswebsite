@@ -70,9 +70,19 @@
  |  |\  \  |  `---.|        ||        |`-./  /.__)          \ `-'   /(_'  '--'\  
  `--' '--' `------'`--------'`--------'  `--'                `----''    `-----'" 
         </pre>
-        <marquee loop="1" behavior="scroll" direction="right" scrollamount="100">
+        
+        <div id="marquee-container">
+            <marquee loop="1" behavior="scroll" direction="right" scrollamount="100">
             oh fuck too fast
-        </marquee>
+            </marquee>
+        </div>
+        <script>
+            // Show the marquee after 5 seconds
+            setTimeout(() => {
+                document.getElementById('marquee-container').style.visibility = 'visible';
+            }, 5000);
+        </script>
+
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <a href="https://twitter.com/Rezzybxy" target="_blank" class="bg-space hover:bg-finn text-white font-bold py-2 px-4 rounded inline-flex items-center">
                 <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" class="w-6 h-6 mr-2">
