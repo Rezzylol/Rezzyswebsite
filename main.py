@@ -32,6 +32,11 @@ def silly_route():
 def yip_box_route():
     return render_template("yip_box.html", user_ip=request.user_ip)
 
+@app.route("/super_secret_room")
+def super_secret_room_route():
+    return render_template("super_secret_room.html", user_ip=request.user_ip)
+
+
 import random
 
 @app.context_processor
