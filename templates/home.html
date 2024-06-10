@@ -10,11 +10,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-
-#hiddenImage {
-        display: none;
-    }
-        
+        #hiddenImage {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        #hiddenImage.show {
+            display: block;
+            opacity: 1;
+        }
 #links {
     opacity: 0;
     animation: fadeIn 1.5s ease-out forwards;
@@ -259,12 +263,17 @@
 </div>
 
 <div class="fixed bottom-12 right-0 p-4 text-black">
-    <img id="hiddenImage" scr="/imgs/tgmeme.png" alt="tgmeme">
+    <img id="hiddenImage" scr="https://raw.githubusercontent.com/Rezzylol/Rezzyswebsite/main/imgs/tgmeme.png" alt="tgmeme">
     <script>
         setTimeout(function() {
-            document.getElementById('hiddenImage').style.display = 'block';
+            const image = document.getElementById('hiddenImage');
+            image.style.display = 'block';
+            setTimeout(function() {
+                image.classList.add('show');
+            }, 10); // Small delay to ensure the display property has been applied before starting the fade effect
         }, 25000); // 25000 milliseconds = 25 seconds
     </script>
+</body>
 </div>
 
 <div class="flex justify-center">
