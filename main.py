@@ -37,6 +37,11 @@ def yip_box_route():
 def super_secret_room_route():
     return render_template("super_secret_room.html", user_ip=request.user_ip)
 
+@app.route("/rezzyquest")
+def RezzyQuest_route():
+    return render_template("Rezzy_Quest_ver1.html", user_ip=request.user_ip)
+
+
 
 import random
 
