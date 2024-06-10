@@ -38,21 +38,8 @@
         <p>This website is best experienced in 4k widescreen with a little bit of Bladee playing.</p>
         <button onclick="hideMessage()">Continue Anyway</button>
     </div>
-    <script>
-        function isMobile() {
-            return /Mobi|Android/i.test(navigator.userAgent);
-        }
-
-        function hideMessage() {
-            document.getElementById('mobileMessage').style.display = 'none';
-        }
-
-        window.onload = function() {
-            if (isMobile()) {
-                document.getElementById('mobileMessage').style.display = 'block';
-            }
-        }
-    </script>
+    <script src="/static/js/mobilecheck.js"> </script>
+    
     {% include 'partials/_header.html' %}
     <div class="container mx-auto px-4 mt-8 min-h-screen">
         <pre class="ascii-art">
