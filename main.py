@@ -42,8 +42,8 @@ def RezzyQuest_route():
     return render_template("Rezzy_Quest_ver1.html", user_ip=request.user_ip)
 
 @app.route("/ROTD")
-def RezzyQuest_route():
-    return render_template("ROTDarchive.html", user_ip=request.user_ip)
+def ROTD_route():
+    return render_template("ROTDarchive .html", user_ip=request.user_ip)
 
 
 import random
