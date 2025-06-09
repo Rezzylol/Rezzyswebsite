@@ -10,12 +10,12 @@ services:
     env_file:
       - stack.env
     pull_policy: build
-    hostname: rezzy.fr
+    hostname: rezzy.win
     labels:
       - traefik.docker.network=traefik
       - traefik.enable=true
       - traefik.http.routers.rezzyweb.entrypoints=websecure
-      - traefik.http.routers.rezzyweb.rule=Host(`rezzy.fr`)
+      - traefik.http.routers.rezzyweb.rule=Host(`rezzy.win`)
       - traefik.http.routers.rezzyweb.tls.certresolver=letsencrypt
       - traefik.http.services.rezzyweb.loadbalancer.server.port=8080
     networks:
